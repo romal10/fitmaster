@@ -148,6 +148,8 @@
     /*------------------
         Barfiller
     --------------------*/
+
+
     $('#bar1').barfiller({
         barColor: '#ffffff',
         duration: 2000
