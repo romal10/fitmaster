@@ -1,10 +1,10 @@
 /*  ---------------------------------------------------
-  Template Name: Gym
+  Template Name: Karate
   Description:  Gym Fitness HTML Template
   Author: Colorlib
-  Author URI: https://colorlib.com
+  Author URI: https://romalnetlify.app
   Version: 1.0
-  Created: Colorlib
+  Created: Romal
 ---------------------------------------------------------  */
 
 'use strict';
@@ -122,6 +122,15 @@
         autoplay: true
     });
 
+    /*------------------
+        Appointment Page
+    --------------------*/
+    document.getElementById('appointment-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // Handle form submission logic here
+        alert('Appointment booked!');
+    });
+  
     /*------------------
         Image Popup
     --------------------*/

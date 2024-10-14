@@ -113,6 +113,7 @@ ol {
   Helper CSS
 -----------------------*/
 
+
 .section-title {
 	margin-bottom: 45px;
 	text-align: center;
@@ -621,6 +622,43 @@ ol {
 	margin-top: 24px;
 	margin-bottom: 16px;
 }
+
+/*---------------------
+  Appointment Section
+-----------------------*/
+
+.appointment-section {
+    padding: 60px 0;
+    background-color: #212529; /* Example background color */
+}
+
+.appointment-section h2 {
+    color: #f36100; /* Example text color */
+}
+
+.appointment-section .btn-primary {
+    background-color: #f36100; /* Example primary button color */
+    border-color: #f36100;
+}
+
+.appointment-section {
+    padding: 60px 0;
+    background-color: #212529; /* Example background color */
+}
+
+.appointment-section h2 {
+    color: #f36100; /* Example text color */
+}
+
+.appointment-section .btn-primary {
+    background-color: #f36100; /* Example primary button color */
+    border-color: #f36100;
+}
+
+.appointment-label {
+	color: white;
+}
+
 
 /*---------------------
   Classes Section
