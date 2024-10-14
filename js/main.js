@@ -130,7 +130,15 @@
         // Handle form submission logic here
         alert('Appointment booked!');
     });
-  
+
+    /*------------------
+        Info Page HistoryStart 
+    --------------------*/
+
+    
+    /*------------------
+        Info Page end
+    --------------------*/
     /*------------------
         Image Popup
     --------------------*/

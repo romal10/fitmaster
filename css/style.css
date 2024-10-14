@@ -627,39 +627,76 @@ ol {
   Appointment Section
 -----------------------*/
 
-.appointment-section {
-    padding: 60px 0;
-    background-color: #212529; /* Example background color */
+body {
+    background-color: #000; /* Black background for the entire page */
+    color: white; /* White text for readability */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.appointment-section h2 {
-    color: #f36100; /* Example text color */
+.mission-vision {
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    padding: 30px;
+    margin: 20px 10%; /* Margin from left and right */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.appointment-section .btn-primary {
-    background-color: #f36100; /* Example primary button color */
-    border-color: #f36100;
+.mission-vision h2 {
+    color: #ff9900; /* Orange for headings */
+    text-align: center;
 }
 
-.appointment-section {
-    padding: 60px 0;
-    background-color: #212529; /* Example background color */
+.mission-vision p {
+    text-align: justify; /* Justified text for better readability */
+    margin: 10px 0;
 }
 
-.appointment-section h2 {
-    color: #f36100; /* Example text color */
+.kyokushin-history {
+    background: rgba(0, 0, 0, 0.8); /* Dark transparent background */
+    padding: 30px;
+    margin: 20px 10%; /* Margin from left and right */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
-.appointment-section .btn-primary {
-    background-color: #f36100; /* Example primary button color */
-    border-color: #f36100;
+.kyokushin-history h2, .kyokushin-history h3 {
+    color: #ff9900; /* Orange for headings */
+    text-align: center;
 }
 
-.appointment-label {
-	color: white;
+.history, .modern {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+.images {
+    margin: 15px 0;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    width: 30%; /* Adjust as needed */
+    border-radius: 5px;
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Zoom effect on images */
 }
 
 
+/*---------------------
+  Info Page History Section end
+-----------------------*/
 
 /*---------------------
   Classes Section
