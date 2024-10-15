@@ -149,70 +149,81 @@
 <!--News Section begin -->
 
 <section class="news-container">
-    <div class="news-tile">
-        <div class="news-content">
-            <img src="img/blog/blog-1.jpg" alt="Upcoming Tournament">
-            <div class="text-container">
-                <h2>Upcoming Tournament Announcement</h2>
-                <p class="date">Date: October 15, 2024</p>
-                <p>We are excited to announce our next tournament scheduled for December 5-7, 2024. Teams from around the world are invited to participate.</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
+    <div class="filter-section">
+        <h2 class="news-heading">News</h2>
+        <div class="filter-options">
+            <button class="filter-button" data-filter="latest">Latest</button>
+            <button class="filter-button" data-filter="featured">Featured Posts</button>
+            <button class="filter-button" data-filter="popular">7 Days Popular</button>
+            <button class="filter-button" data-filter="random">Random</button>
         </div>
     </div>
 
-    <div class="news-tile">
-        <div class="news-content">
-            <img src="img/blog/blog-1.jpg" alt="Training Camp">
-            <div class="text-container">
-                <h2>Training Camp Success</h2>
-                <p class="date">Date: September 30, 2024</p>
-                <p>Our recent training camp was a tremendous success, with participants improving their skills and techniques.</p>
-                <a href="#" class="read-more">Read More</a>
+    <div class="news-grid">
+        <div class="news-tile">
+            <div class="news-content">
+                <img src="img/blog/blog-1.jpg" alt="Upcoming Tournament">
+                <div class="text-container">
+                    <h2>Upcoming Tournament Announcement</h2>
+                    <p class="date">Date: October 15, 2024</p>
+                    <p>We are excited to announce our next tournament scheduled for December 5-7, 2024. Teams from around the world are invited to participate.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="news-tile">
-        <div class="news-content">
-            <img src="img/blog/blog-1.jpg" alt="New Dojo Opening">
-            <div class="text-container">
-                <h2>New Dojo Opening</h2>
-                <p class="date">Date: September 15, 2024</p>
-                <p>We are thrilled to announce the opening of our new dojo in Kabul, Afghanistan. Join us for the grand opening ceremony!</p>
-                <a href="#" class="read-more">Read More</a>
+        <div class="news-tile">
+            <div class="news-content">
+                <img src="img/blog/blog-1.jpg" alt="Training Camp">
+                <div class="text-container">
+                    <h2>Training Camp Success</h2>
+                    <p class="date">Date: September 30, 2024</p>
+                    <p>Our recent training camp was a tremendous success, with participants improving their skills and techniques.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="news-tile">
-        <div class="news-content">
-            <img src="img/blog/blog-1.jpg" alt="Discipline in Karate">
-            <div class="text-container">
-                <h2>The Importance of Discipline in Karate</h2>
-                <p class="date">Date: September 10, 2024</p>
-                <p>Discipline is a cornerstone of karate training. This article explores how it shapes our practice and personal growth.</p>
-                <a href="#" class="read-more">Read More</a>
+        <div class="news-tile">
+            <div class="news-content">
+                <img src="img/blog/blog-1.jpg" alt="New Dojo Opening">
+                <div class="text-container">
+                    <h2>New Dojo Opening</h2>
+                    <p class="date">Date: September 15, 2024</p>
+                    <p>We are thrilled to announce the opening of our new dojo in Kabul, Afghanistan. Join us for the grand opening ceremony!</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="news-tile">
-        <div class="news-content">
-            <img src="img/blog/blog-1.jpg" alt="Dummy Image">
-            <div class="text-container">
-                <h2>No Image Available</h2>
-                <p class="date">Date: N/A</p>
-                <p>This article does not have an accompanying image.</p>
-                <a href="#" class="read-more">Read More</a>
+        <div class="news-tile">
+            <div class="news-content">
+                <img src="img/blog/blog-1.jpg" alt="Discipline in Karate">
+                <div class="text-container">
+                    <h2>The Importance of Discipline in Karate</h2>
+                    <p class="date">Date: September 10, 2024</p>
+                    <p>Discipline is a cornerstone of karate training. This article explores how it shapes our practice and personal growth.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-tile">
+            <div class="news-content">
+                <img src="img/blog/blog-1.jpg" alt="Dummy Image">
+                <div class="text-container">
+                    <h2>No Image Available</h2>
+                    <p class="date">Date: N/A</p>
+                    <p>This article does not have an accompanying image.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Section end-->
 
-
-<!-- News Section End -->
 
     <!-- Footer Section Begin -->
     <section class="footer-section">
@@ -309,6 +320,17 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        document.querySelectorAll('.filter-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                console.log(`Filter selected: ${filter}`);
+                // Implement your filtering logic here
+            });
+        });
+    </script>
+    </body>
+    </html>
 
 
 

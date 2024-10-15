@@ -716,16 +716,58 @@ body {
 
 .news-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px; /* Added padding for space on the sides */
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+.filter-section {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-bottom: 10px; /* Minimal space below the filter section */
+}
+
+.news-heading {
+    color: #f36100; /* Heading color */
+    font-size: 1.5em; /* Adjusted font size */
+    margin-bottom: 5px; /* Reduced space below heading */
+}
+
+.filter-options {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+}
+
+.filter-button {
+    background-color: transparent; /* Transparent background */
+    color: #f36100; /* Button text color */
+    border: 1px solid #f36100; /* Button border color */
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0 5px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.4s ease; /* Transition for hover effect */
+}
+
+.filter-button:hover {
+    background-color: #f36100; /* Fill with color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.news-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow tiles to wrap */
+    justify-content: space-between; /* Space between tiles */
+    width: 100%; /* Full width for the grid */
 }
 
 .news-tile {
-    border: 2px solid #f36100; /* Orange border around each tile */
+    border: 1px solid #f36100; /* Slim border around each tile */
     border-radius: 8px;
     margin: 10px;
-    width: calc(45% - 15px); /* Adjust width for larger screens */
+    width: calc(48% - 20px); /* Two tiles per row with spacing */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
@@ -777,32 +819,10 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #f36100; /* Button color */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.read-more:hover {
-    background-color: #f36100; /* Slightly darker on hover */
-}
-
-.news-tile {
-    border: 1px solid #f36100; /* Slimmer border around each tile */
-    border-radius: 8px;
-    margin: 10px;
-    width: calc(45% - 15px); /* Adjust width for larger screens */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
-}
-
-.read-more {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 15px;
     background-color: transparent; /* Make background transparent */
     color: #f36100; /* Text color */
-    border: 1px solid #f36100; /* Slimmer border color */
-    border-radius: 5px;
+    border: 1px solid #f36100; /* Border color */
+    border-radius: 5px; /* Rounded corners */
     text-decoration: none;
     transition: background-color 0.4s ease; /* Transition for hover effect */
 }
@@ -811,12 +831,6 @@ body {
     background-color: #f36100; /* Fill with color on hover */
     color: white; /* Change text color on hover */
 }
-
-/* Other existing styles remain unchanged */
-
-
-/* Other existing styles remain unchanged */
-
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -843,7 +857,6 @@ body {
         font-size: 1em; /* Further decrease title font size */
     }
 }
-
 
 
 /*---------------------
