@@ -863,6 +863,127 @@ body {
 News Page History Section end
 -----------------------*/
 
+.branch-chief-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    padding: 20px;
+}
+
+.branch-chief-heading {
+    color: #f36100; /* Heading color */
+    font-size: 1.5em; /* Adjusted font size */
+    margin-bottom: 15px; /* Space below heading */
+}
+
+.branch-chief-grid {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Space between tiles */
+    width: 100%; /* Full width */
+}
+
+.branch-chief-tile {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    border: 1px solid #f36100; /* Slim border */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(45% - 20px); /* Adjust width for two columns */
+    box-sizing: border-box; /* Include padding and border in total width */
+    display: flex; /* Use flexbox for internal layout */
+    align-items: center; /* Center items vertically */
+}
+
+.branch-chief-content {
+    display: flex; /* Arrange photo and text side by side */
+    align-items: center; /* Center vertically */
+}
+
+.branch-chief-tile img {
+    width: 100px; /* Fixed size for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-right: 15px; /* Space between image and text */
+    transition: transform 0.4s ease; /* Animation effect */
+}
+
+.branch-chief-tile img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.branch-chief-info {
+    text-align: left; /* Align text to the left */
+}
+
+.branch-chief-info h3 {
+    color: #f36100; /* Title color */
+    margin: 0 0 10px; /* Space below title */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .branch-chief-tile {
+        width: calc(100% - 20px); /* Full width on smaller screens */
+    }
+}
+
+.branch-chief-tile {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    border: 1px solid #f36100; /* Slim border */
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: calc(45% - 20px); /* Adjust width for two columns */
+    box-sizing: border-box; /* Include padding and border in total width */
+    display: flex; /* Use flexbox for internal layout */
+    align-items: center; /* Center items vertically */
+}
+
+.branch-chief-content {
+    display: flex; /* Arrange photo and text side by side */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.branch-chief-tile img {
+    width: 150px; /* Increased width for images */
+    height: 220px; /* Increased height for portrait shape */
+    border-radius: 8px; /* Slightly rounded corners */
+    margin-right: 25px; /* Increased space between image and text */
+    transition: transform 0.4s ease; /* Animation effect */
+}
+
+.branch-chief-tile img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.branch-chief-info {
+    text-align: left; /* Align text to the left */
+    background-color: rgba(243, 97, 0, 0.1); /* Light background color matching title */
+    border-radius: 8px; /* Rounded corners for the text container */
+    padding: 10px; /* Padding inside the text container */
+    flex: 1; /* Allow text container to take remaining space */
+}
+
+.branch-chief-info h3 {
+    color: #f36100; /* Title color */
+    margin: 0 0 10px; /* Space below title */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .branch-chief-tile {
+        width: calc(100% - 20px); /* Full width on smaller screens */
+    }
+}
+
+
+
+/*---------------------
+Branch Page History Section end
+-----------------------*/
+
+
 /*---------------------
   Classes Section
 -----------------------*/
