@@ -714,6 +714,142 @@ body {
   Info Page History Section end
 -----------------------*/
 
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Added padding for space on the sides */
+}
+
+.news-tile {
+    border: 2px solid #f36100; /* Orange border around each tile */
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(45% - 15px); /* Adjust width for larger screens */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.news-content {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    border-radius: 8px;
+    padding: 10px; /* Reduced padding */
+    display: flex;
+    align-items: flex-start; /* Aligns items to the start */
+    position: relative; /* Set position to relative for child elements */
+}
+
+.news-content img {
+    width: 100%; /* Make image responsive */
+    max-width: 200px; /* Limit max width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between image and text */
+    transition: transform 0.4s ease; /* Animation effect */
+}
+
+.news-content img:hover {
+    transform: scale(1.2) translateY(-10px); /* Scale up and move slightly up */
+}
+
+.text-container {
+    flex: 1; /* Allows text container to take the remaining space */
+    transition: opacity 0.4s ease; /* Transition for text opacity */
+}
+
+.news-content img:hover + .text-container {
+    opacity: 0.5; /* Make text slightly transparent on image hover */
+}
+
+.text-container h2 {
+    margin: 0;
+    color: #f36100; /* Title color */
+    font-size: 1.2em; /* Adjusted font size for title */
+}
+
+.text-container p {
+    margin: 5px 0;
+}
+
+.text-container .date {
+    opacity: 0.7; /* Made the date slightly transparent */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #f36100; /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #f36100; /* Slightly darker on hover */
+}
+
+.news-tile {
+    border: 1px solid #f36100; /* Slimmer border around each tile */
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(45% - 15px); /* Adjust width for larger screens */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: transparent; /* Make background transparent */
+    color: #f36100; /* Text color */
+    border: 1px solid #f36100; /* Slimmer border color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.4s ease; /* Transition for hover effect */
+}
+
+.read-more:hover {
+    background-color: #f36100; /* Fill with color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* Other existing styles remain unchanged */
+
+
+/* Other existing styles remain unchanged */
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .news-tile {
+        width: calc(100% - 20px); /* Full width on smaller screens */
+        margin: 10px 0; /* Margin adjustment for vertical spacing */
+    }
+
+    .news-content img {
+        max-width: 150px; /* Smaller max width for images on small screens */
+    }
+
+    .text-container h2 {
+        font-size: 1.1em; /* Slightly smaller title font */
+    }
+}
+
+@media (max-width: 480px) {
+    .news-content img {
+        max-width: 100px; /* Even smaller max width for very small screens */
+    }
+
+    .text-container h2 {
+        font-size: 1em; /* Further decrease title font size */
+    }
+}
+
+
+
+/*---------------------
+News Page History Section end
+-----------------------*/
+
 /*---------------------
   Classes Section
 -----------------------*/
