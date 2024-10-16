@@ -1,50 +1,28 @@
-body {
-    font-family: Arial;
+.progress-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    max-width: 90%; /* Responsive width */
+    margin: 20px auto;
 }
 
-.barfiller {
-    width:100%;
-    height:12px;
-    background:#fcfcfc;
-    border:1px solid #ccc;
-    position:relative;
-    margin-bottom:20px;
-    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
-    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+.ab-item {
+    display: flex; /* Use flexbox for each item */
+    justify-content: space-between; /* Space between label and bar */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px;
 }
 
-.barfiller .fill {
-    display:block;
-    position:relative;
-    width:0px;
-    height:100%;
-    background:#333;
-    z-index:1;
+.progress-bar {
+    background: #e0e0e0;
+    border-radius: 5px;
+    height: 15px;
+    overflow: hidden;
+    flex-grow: 1; /* Allow the bar to grow and take available space */
+    margin-left: 10px; /* Space between text and bar */
 }
 
-.barfiller .tipWrap {
-    display:none;
-}
-
-.barfiller .tip {
-    margin-top:-30px;
-    padding:2px 4px;
-    font-size:11px;
-    color:#fff;
-    left:0px;
-    position: relative;;
-    z-index:2;
-    background: #333;
-} 
-
-.barfiller .tip:after {
-    border:solid;
-    border-color:rgba(0,0,0,.8) transparent;
-    border-width:6px 6px 0 6px;
-    content:"";
-    display:block;
-    position:absolute;
-    left:9px;
-    top:100%;
-    z-index:9
+.fill {
+    height: 100%;
+    background: #f36100;
+    transition: width 1s;
 }
