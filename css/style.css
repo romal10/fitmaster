@@ -876,16 +876,20 @@ News Page History Section end
 
 .branch-chief-grid {
     display: flex;
-    justify-content: space-between; /* Space between the tiles */
-    gap: 20px; /* Space between tiles */
-    margin-bottom: 20px; /* Space below each grid */
+    flex-direction: column; /* Stack rows vertically */
+    gap: 20px; /* Space between rows */
+}
+
+.branch-chief-row {
+    display: flex; /* Display tiles side by side */
+    justify-content: space-between; /* Space between tiles */
 }
 
 .branch-chief-tile {
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid #f36100;
     border-radius: 8px;
-    width: calc(45%); /* Adjust width for two columns */
+    width: calc(48%); /* Slightly less than 50% to allow spacing */
     box-sizing: border-box;
 }
 
@@ -922,16 +926,14 @@ News Page History Section end
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .branch-chief-grid {
-        flex-direction: column; /* Stack tiles on smaller screens */
-        gap: 10px; /* Adjust gap for smaller screens */
+    .branch-chief-row {
+        flex-direction: column; /* Stack tiles vertically on small screens */
     }
 
     .branch-chief-tile {
         width: 100%; /* Full width on smaller screens */
     }
 }
-
 
 /*---------------------
 Branch Page History Section end
