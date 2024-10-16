@@ -864,119 +864,73 @@ News Page History Section end
 -----------------------*/
 
 .branch-chief-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center align the heading */
     padding: 20px;
 }
 
-.branch-chief-heading {
-    color: #f36100; /* Heading color */
-    font-size: 1.5em; /* Adjusted font size */
-    margin-bottom: 15px; /* Space below heading */
+.branch-heading {
+    font-size: 24px;
+    margin: 20px 0; /* Space above and below */
+    color: #f36100; /* Title color matching the rest of the page */
 }
 
 .branch-chief-grid {
-    display: flex; /* Use flexbox for side-by-side layout */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    justify-content: space-between; /* Space between tiles */
-    width: 100%; /* Full width */
+    display: flex;
+    justify-content: space-between; /* Space between the tiles */
+    gap: 20px; /* Space between tiles */
+    margin-bottom: 20px; /* Space below each grid */
 }
 
 .branch-chief-tile {
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-    border: 1px solid #f36100; /* Slim border */
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #f36100;
     border-radius: 8px;
-    margin: 10px;
-    padding: 15px;
-    width: calc(45% - 20px); /* Adjust width for two columns */
-    box-sizing: border-box; /* Include padding and border in total width */
-    display: flex; /* Use flexbox for internal layout */
-    align-items: center; /* Center items vertically */
+    width: calc(45%); /* Adjust width for two columns */
+    box-sizing: border-box;
 }
 
 .branch-chief-content {
-    display: flex; /* Arrange photo and text side by side */
-    align-items: center; /* Center vertically */
+    display: flex;
+    align-items: flex-start;
+    padding: 15px;
 }
 
 .branch-chief-tile img {
-    width: 100px; /* Fixed size for images */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 50%; /* Circular image */
-    margin-right: 15px; /* Space between image and text */
-    transition: transform 0.4s ease; /* Animation effect */
+    width: 150px;
+    height: 220px;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: transform 0.4s ease;
 }
 
 .branch-chief-tile img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1);
 }
 
 .branch-chief-info {
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    background-color: rgba(243, 97, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
 }
 
 .branch-chief-info h3 {
-    color: #f36100; /* Title color */
-    margin: 0 0 10px; /* Space below title */
+    color: #f36100;
+    margin: 0 0 10px;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .branch-chief-grid {
+        flex-direction: column; /* Stack tiles on smaller screens */
+        gap: 10px; /* Adjust gap for smaller screens */
+    }
+
     .branch-chief-tile {
-        width: calc(100% - 20px); /* Full width on smaller screens */
+        width: 100%; /* Full width on smaller screens */
     }
 }
-
-.branch-chief-tile {
-    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
-    border: 1px solid #f36100; /* Slim border */
-    border-radius: 8px;
-    margin: 10px;
-    padding: 15px;
-    width: calc(45% - 20px); /* Adjust width for two columns */
-    box-sizing: border-box; /* Include padding and border in total width */
-    display: flex; /* Use flexbox for internal layout */
-    align-items: center; /* Center items vertically */
-}
-
-.branch-chief-content {
-    display: flex; /* Arrange photo and text side by side */
-    align-items: flex-start; /* Align items to the top */
-}
-
-.branch-chief-tile img {
-    width: 150px; /* Increased width for images */
-    height: 220px; /* Increased height for portrait shape */
-    border-radius: 8px; /* Slightly rounded corners */
-    margin-right: 25px; /* Increased space between image and text */
-    transition: transform 0.4s ease; /* Animation effect */
-}
-
-.branch-chief-tile img:hover {
-    transform: scale(1.1); /* Slight zoom on hover */
-}
-
-.branch-chief-info {
-    text-align: left; /* Align text to the left */
-    background-color: rgba(243, 97, 0, 0.1); /* Light background color matching title */
-    border-radius: 8px; /* Rounded corners for the text container */
-    padding: 10px; /* Padding inside the text container */
-    flex: 1; /* Allow text container to take remaining space */
-}
-
-.branch-chief-info h3 {
-    color: #f36100; /* Title color */
-    margin: 0 0 10px; /* Space below title */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .branch-chief-tile {
-        width: calc(100% - 20px); /* Full width on smaller screens */
-    }
-}
-
 
 
 /*---------------------
