@@ -912,16 +912,20 @@ News Page History Section end
 }
 
 .branch-chief-info {
-    text-align: left;
+    text-align: left; /* Align text to the left */
     background-color: rgba(243, 97, 0, 0.1);
     border-radius: 8px;
     padding: 10px;
-    flex: 1;
+    flex: 1; /* Allow text container to take remaining space */
 }
 
 .branch-chief-info h3 {
     color: #f36100;
     margin: 0 0 10px;
+}
+
+.branch-chief-info p {
+    margin: 5px 0; /* Space between text lines */
 }
 
 /* Responsive Styles */
