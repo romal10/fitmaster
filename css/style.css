@@ -862,7 +862,6 @@ body {
 /*---------------------
 News Page History Section end
 -----------------------*/
-
 .branch-chief-container {
     text-align: center; /* Center align the heading */
     padding: 20px;
@@ -895,6 +894,11 @@ News Page History Section end
     box-sizing: border-box;
     display: flex; /* Ensure flex layout for tile */
     flex-direction: column; /* Stack content vertically */
+    transition: transform 0.3s ease; /* Transition effect for the whole tile */
+}
+
+.branch-chief-tile:hover {
+    transform: scale(1.02); /* Slightly enlarge the tile on hover */
 }
 
 .branch-chief-content {
@@ -910,6 +914,11 @@ News Page History Section end
     border-radius: 8px;
     margin-right: 15px; /* Space between image and text */
     flex-shrink: 0; /* Prevent image from shrinking */
+    transition: transform 0.3s ease; /* Transition effect for images */
+}
+
+.branch-chief-content img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
 }
 
 .branch-chief-info {
@@ -973,8 +982,6 @@ News Page History Section end
         font-size: 14px; /* Smaller text for paragraphs */
     }
 }
-
-
 
 /*---------------------
 Branch Page History Section end
