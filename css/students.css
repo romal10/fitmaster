@@ -1,0 +1,119 @@
+/* Global Styles */
+body {
+    background-color: black; /* Main background color */
+    color: black; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-section {
+	background: #000000;
+	padding-top: 50px;
+}
+
+
+.header {
+    text-align: center; /* Center header text */
+    background-color: #f36100; /* Header background color */
+    padding: 20px; /* Padding around header */
+    color: white; /* Text color */
+}
+
+
+/* Student Section Styles */
+#student-section {
+    background-color: #151515; /* Slightly transparent black */
+    padding: 20px; /* Padding around the student cards */
+    border-radius: 8px; /* Optional: Round the section corners */
+}
+
+/* Student List Styles */
+#student-list {
+    display: flex; /* Use flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: flex-start; /* Align items to the start */
+    margin: 0 auto;
+}
+
+/* Individual Student Card Styles */
+.student-card {
+    flex: 0 1 calc(25% - 10px); /* Four cards per row with margin adjustment */
+    box-sizing: border-box; /* Ensures padding/margin don't affect width */
+    margin: 5px; /* Space between cards */
+    background-color: #333; /* Slightly transparent white */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    transition: transform 0.2s; /* Smooth hover effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    display: flex; /* Flex display for content alignment */
+    flex-direction: column; /* Stack contents vertically */
+    align-items: center; /* Center contents */
+}
+
+.student-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Profile Picture Styles */
+.profile-pic {
+    width: 100px; /* Fixed width for images */
+    height: 100px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the space */
+    border-radius: 50%; /* Round image */
+}
+
+/* Student Info Alignment */
+.student-info {
+    text-align: center; /* Center text */
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center; /* Center pagination buttons */
+    margin-top: 20px; /* Space above pagination */
+}
+
+.pagination button {
+    background-color: #f36100; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    padding: 10px 15px; /* Button padding */
+    margin: 0 5px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+}
+
+.pagination button:hover {
+    background-color: #d65c00; /* Darker on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    .student-card {
+        flex: 0 1 calc(50% - 10px); /* Two cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .student-card {
+        flex: 0 1 100%; /* One card per row on very small screens */
+    }
+}
+
+
+.student-title {
+    margin-bottom: 20px; /* Adjust the value as needed */
+    color: white; /* Title color */
+    text-align: center; /* Center the title */
+}
+
+.student-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the parent's text color */
+}
+
+.student-link:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}

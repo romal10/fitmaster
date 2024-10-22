@@ -1,10 +1,10 @@
 /*  ---------------------------------------------------
   Template Name: Karate
-  Description:  Gym Fitness HTML Template
-  Author: Colorlib
-  Author URI: https://romalnetlify.app
+  Description:  Karate HTML Template
+  Author: Romax
+  Author URI: https://romax.app
   Version: 1.0
-  Created: Romal
+  Created: Romax
 ---------------------------------------------------------  */
 
 'use strict';
@@ -134,7 +134,7 @@
     /*------------------
         Login Page begin
     --------------------*/
-    v
+    
      /*------------------
         login Page end
     --------------------*/
@@ -155,10 +155,8 @@
         });
     });
     
+
     
-    /*------------------
-        Bar Filler end
-    --------------------*/
     /*------------------
         Image Popup
     --------------------*/
