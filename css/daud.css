@@ -41,7 +41,7 @@ header, footer {
     border-radius: 5px;
     overflow: hidden; /* Hide overflow for rounded corners */
     transition: transform 0.3s;
-    height: 400px; /* Fixed height for success stories */
+    height: 500px; /* Fixed height for success stories */
 }
 
 .story img {
@@ -51,7 +51,7 @@ header, footer {
 }
 
 .blog-post {
-    width: 250px; /* Increased width for blog posts */
+    width: 300px; /* Increased width for blog posts */
     height: 250px; /* Increased height for blog posts */
     margin: 5px; /* Space around each item */
     background-color: #333; /* Background for each item */
