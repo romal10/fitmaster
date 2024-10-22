@@ -1,0 +1,114 @@
+body {
+    background-color: #000; /* Background color */
+    color: white; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px; /* Increased max-width */
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.success-stories, .blog-container {
+    background-color: rgba(77, 77, 77, 0.9); /* Transparent black */
+    padding: 20px; /* Increased padding */
+    border-radius: 8px;
+    width: 100%; /* Full width */
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.story-container, .blog-container-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust space between items */
+}
+
+.story {
+    width: calc(50% - 10px); /* 2 stories per row with spacing */
+    margin: 5px; /* Space around each item */
+    background-color: #333; /* Background for each item */
+    border-radius: 5px;
+    overflow: hidden; /* Hide overflow for rounded corners */
+    transition: transform 0.3s;
+    height: 400px; /* Fixed height for success stories */
+}
+
+.story img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Fill the container */
+}
+
+.blog-post {
+    width: 250px; /* Increased width for blog posts */
+    height: 250px; /* Increased height for blog posts */
+    margin: 5px; /* Space around each item */
+    background-color: #333; /* Background for each item */
+    border-radius: 5px;
+    overflow: hidden; /* Hide overflow for rounded corners */
+    transition: transform 0.3s;
+}
+
+.blog-post img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Fill the container */
+}
+
+.story:hover, .blog-post:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.navigation {
+    display: flex;
+    justify-content: center; /* Center buttons */
+    margin-top: 20px; /* Space above buttons */
+}
+
+button {
+    background-color: #f36100; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for buttons */
+    margin: 0 10px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+button:hover {
+    background-color: #d25b00; /* Darker on hover */
+}
+
+/* Optional: Adjust for smaller screens */
+@media (max-width: 600px) {
+    .story {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Auto height to maintain aspect ratio */
+    }
+
+    .blog-post {
+        width: 100%; /* Full width for blog posts on small screens */
+        height: auto; /* Auto height for blog posts on small screens */
+    }
+
+    .navigation {
+        flex-direction: column; /* Stack buttons on smaller screens */
+    }
+
+    button {
+        margin: 5px 0; /* Space around buttons */
+    }
+}
+
