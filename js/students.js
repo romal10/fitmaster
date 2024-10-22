@@ -1,6 +1,6 @@
 // Sample student data with profile picture paths and links
 const students = [
-    { name: "Ahmad Khan", address: "Kabul", phone: "+93 700 000 001", rating: 4, img: "img/students/student-1.jpg", link: "ahmad-khan.html" },
+    { name: "Omid Khan", address: "Kabul", phone: "+93 700 000 001", rating: 4, img: "img/students/student-1.jpg", link: "ahmad-khan.html" },
     { name: "Fatima Zahra", address: "Kandahar", phone: "+93 700 000 002", rating: 5, img: "img/students/fatima-zahra.jpg", link: "fatima-zahra.html" },
     { name: "Mohammad Ali", address: "Herat", phone: "+93 700 000 003", rating: 3, img: "img/students/mohammad-ali.jpg", link: "mohammad-ali.html" },
     { name: "Sara Bibi", address: "Mazar-i-Sharif", phone: "+93 700 000 004", rating: 5, img: "img/students/sara-bibi.jpg", link: "sara-bibi.html" },
